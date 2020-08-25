@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 /**
+2020-08-25
+
 如果数组里面有重复数字就输出 true，否则输出 flase
 Example 1:
 Input: [1,2,3,1]
