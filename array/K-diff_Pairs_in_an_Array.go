@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 /**
+2020-08-26
 给定一个数组，在数组里面找到几组不同的 pair 对，每个 pair 对相差 K 。问能找出多少组这样的 pair 对
 Example 1:
 Input: [3, 1, 4, 1, 5], k = 2
@@ -28,6 +29,8 @@ Explanation: There is one 0-diff pair in the array, (1, 1).
 遍历一次 map，每个数字都加上 K 以后，判断字典里面是否存在，
 如果存在， count ++，如果 K = 0 的情况需要单独判断，
 如果字典中这个元素频次大于 1，count 也需要 ++
+
+时间复杂度：O(n) 空间复杂度O(n)
 */
 func main() {
 	arr := []int{3, 1, 4, 1, 5}
