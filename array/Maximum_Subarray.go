@@ -7,7 +7,8 @@ import "fmt"
 Input: [-2,1,-3,4,-1,2,1,-5,4],
 Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
-思路：
+思路：题目要求输出数组中某个区间内数字之和最大的那个值。dp[i] 表示 [0,i] 区间内各个子区间和的最大值，状态转移方程是 dp[i] = nums[i] + dp[i-1] (dp[i-1] > 0)，dp[i] = nums[i] (dp[i-1] ≤ 0)。
+时间复杂度：O(n) 空间复杂度：O(n)
 */
 func main() {
 	aar := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
